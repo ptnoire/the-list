@@ -4,10 +4,10 @@ import { z } from "zod";
 export type PassFunctions = () => void;
 
 export type BillWithHistory = Bill & {
-  history: Array<BillHistory>
+  history: BillHistory[];
 }
 
-export type userData = {
+export interface userData {
   userBills: {
       bills: BillWithHistory[];
   };
@@ -17,16 +17,16 @@ export type userData = {
   currBalance: number | null;
 }
 
-type queryCall = { id: string };
+interface queryCall { id: string };
 
-type newMutateCall = {
+interface newMutateCall {
     billName: string,
     billDueAmt: number,
     billDueDate: string,
     isRecurring: boolean,
 }
 
-type editMutateCall = {
+interface editMutateCall {
   id: string,
   billName: string,
   billDueAmt: number,
@@ -34,7 +34,7 @@ type editMutateCall = {
   isRecurring: boolean,
 }
 
-type billHistoryMutateCall = {
+interface billHistoryMutateCall {
   id: string,
   billPaidAmt: number,
 }
@@ -45,7 +45,7 @@ export type newMutateFunction = (args: newMutateCall) => void;
 export type editMutateFunction = (args: editMutateCall) => void;
 export type billHistoryMutateFunction = (args: billHistoryMutateCall) => void;
 
-export type functionObject = {
+export interface functionObject {
   [key: string]: qcFunction;
 };
 
