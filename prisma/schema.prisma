@@ -1,17 +1,32 @@
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
+datasource db {
+    provider     = "mysql"
+    url          = env("DATABASE_URL")
+    relationMode = "prisma"
+}
+
 generator client {
     provider = "prisma-client-js"
 }
 
-datasource db {
-    provider = "sqlite"
-    url      = env("DATABASE_URL")
+model Bill {
+    id          String   @id @default(cuid())
+    createAt    DateTime @default(now())
+    billName    String
+    billDueAmt  Float
+    billDueDate String
+    isRecurring Boolean
+    payd        Boolean  @default(false)
+    billOwner   String
 }
 
-model Example {
-    id        String   @id @default(cuid())
-    createdAt DateTime @default(now())
-    updatedAt DateTime @updatedAt
+model BillHistory {
+    id         String   @id @default(cuid())
+    createAt   DateTime @default(now())
+    billNameID String
+    amtPaid    Float
+    billName   String
+    billOwner  String
 }
