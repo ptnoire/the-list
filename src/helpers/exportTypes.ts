@@ -45,9 +45,7 @@ export type newMutateFunction = (args: newMutateCall) => void;
 export type editMutateFunction = (args: editMutateCall) => void;
 export type billHistoryMutateFunction = (args: billHistoryMutateCall) => void;
 
-export interface functionObject {
-  [key: string]: qcFunction;
-};
+export type functionObject = Record<string, qcFunction>;
 
 export type BillFormatingProps = BillWithHistory & {
   passFunctions: functionObject;
