@@ -1,28 +1,9 @@
-# Create T3 App
+# The List Your Household Needs
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+You know it's pretty common for any web dev to make a to-do list or what not, I'm going to put that aside to just make something I need for my own household which is a list to do a few different things. I don't want to look for one, I just want to make my own. Classic coder doing too much.
 
-## What's next? How do I make an app with this?
+Everything is gettign expensive so I want to track how much stuff is costing,
+Keep track of the things we purchase so we can re up / see how long they last.
+Monthly spending on said things, all of it. Should be a simple app and I want to be able to have multiple people connect to the same app to upload it together.
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
-
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
-
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
-
-## Learn More
-
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
-
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
-
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
-
-## How do I deploy this?
-
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+Hopefully coming back to the game soon, for anyone whose been following my projects here is a small note on my journey into coding. It's simple, being a parent is difficult, learning a new langauge is difficult, starting a new job and a new career is difficult. I took some time off and felt like I couldn't do it anymore, I don't regret it, I have a goal in mind and I'm not going to stop until I get there. I am not ashamed of how long it takes me personally to get there, if you feel the same way; I hope you keep going too!
