@@ -1,4 +1,4 @@
-import { BillHistory } from "@prisma/client";
+
 import { createTRPCRouter, privateProcedure } from "../trpc";
 import { TRPCError } from "@trpc/server";
 import { z } from "zod";
